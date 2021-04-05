@@ -9,9 +9,11 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
+      document.getElementById("#canvas").style.display = "none";
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build Web.json", {onProgress: UnityProgress});
       setTimeout(function(){
       document.getElementById("pop").style.display = "none";
+      document.getElementById("#canvas").style.display = "unset";
       },15000);
       setTimeout(function(){
           document.getElementById("seg").innerHTML = "14";
