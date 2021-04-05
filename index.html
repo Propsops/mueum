@@ -9,16 +9,16 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      document.getElementById("content").style.display = "none";
+      
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build Web.json", {onProgress: UnityProgress});
       
       setTimeout(function(){
       document.getElementById("pop").style.display = "none";
-      document.getElementById("content").style.display = "block";
+      document.getElementById("gameContainer").style.display = "block";
       },15000);
       setTimeout(function(){
           document.getElementById("seg").innerHTML = "14";
-          document.getElementById("content").style.display = "none";
+          document.getElementById("gameContainer").style.display = "none";
       },1000);
       setTimeout(function(){
           document.getElementById("seg").innerHTML = "13";
@@ -74,7 +74,7 @@
           <h2 class="espere">ESPERE: <span id="seg" class="seg">15</span> segundos</h2>
       </div>
     </div>
-    <div class="webgl-content" id="content">
+    <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         
