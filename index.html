@@ -10,15 +10,69 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build Web.json", {onProgress: UnityProgress});
+      setTimeout(function(){
+      document.getElementById("pop").style.display = "none";
+      },15000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "14";
+      },1000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "13";
+      },2000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "12";
+      },3000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "11";
+      },4000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "10";
+      },5000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "9";
+      },6000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "8";
+      },7000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "7";
+      },8000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "6";
+      },9000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "5";
+      },10000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "4";
+      },11000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "3";
+      },12000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "2";
+      },13000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "1";
+      },14000);
+      setTimeout(function(){
+          document.getElementById("seg").innerHTML = "0";
+      },15000);
+
+
     </script>
   </head>
   <body>
+    <div class="pop" id="pop">
+      <div class="up">
+          <h1 class="c">CARGANDO</h1>
+          <h2 class="espere">ESPERE: <span id="seg" class="seg">15</span> segundos</h2>
+      </div>
+    </div>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">Online Museum</div>
+        
       </div>
     </div>
   </body>

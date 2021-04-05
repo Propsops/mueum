@@ -16,3 +16,36 @@
 .webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: 204px; float: left;}
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
+.pop{
+    background-color: rgb(150, 150, 150);
+    padding-left: 100%;
+    padding-top: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    
+}
+.up{
+    padding-bottom: 10%;
+    background-color:white;
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+    left: 10%;
+    right: 10%;
+    top: 50%%;
+    bottom: 50%;
+}
+.c{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    display: block;
+}
+.espere{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    justify-content: center;
+    display: block;
+}
