@@ -4,81 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Online Museum</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build Web.json", {onProgress: UnityProgress});
-      
-      setTimeout(function(){
-      document.getElementById("pop").style.display = "none";
-      document.getElementById("gameContainer").style.display = "block";
-      },15000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "14";
-          document.getElementById("gameContainer").style.display = "none";
-      },1000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "13";
-      },2000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "12";
-      },3000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "11";
-      },4000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "10";
-      },5000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "9";
-      },6000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "8";
-      },7000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "7";
-      },8000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "6";
-      },9000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "5";
-      },10000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "4";
-      },11000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "3";
-      },12000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "2";
-      },13000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "1";
-      },14000);
-      setTimeout(function(){
-          document.getElementById("seg").innerHTML = "0";
-          gameInstance.SetFullscreen(1)
-      },15000);
-
-
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build.json");
     </script>
   </head>
   <body>
-    <div class="pop" id="pop">
-      <div class="up">
-          <h1 class="c">CARGANDO</h1>
-          <h2 class="espere">ESPERE: <span id="seg" class="seg">15</span> segundos</h2>
-      </div>
-    </div>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        
-      </div>
-    </div>
+    <div id="gameContainer" style="width: 960px; height: 600px; margin: auto"></div>
   </body>
 </html>
